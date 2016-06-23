@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Hackathon - Eurobank API</title>
+
+		<meta name="description" content="A quick presentation of the Eurobank API available for the Hackathon">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Eurobank API</h1>
+					<h3>BeyondHackathon</h3>
+				</section>
+
+				<section>
+					<h2>Technical details</h2>
+					<ul>
+						<li>REST microservices</li>
+						<li>JSON/XML payload</li>
+						<li>OAuth2 authentication</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Hackathon version</h2>
+					<p>
+						Deployed at <a href="http://api.beyondhackathon.com">http://api.beyondhackathon.com</a>
+					</p>
+					<ul>
+						<li>Mock, static data</li>
+						<li>List of preloaded customers available at:<br/><a href="http://github.com/eurobank-gr/hackathon">http://github.com/eurobank-gr/hackathon</a></li>
+						<li>Can upload specific customer position, if preloaded customers are not suitable</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Demo</h2>
+					<p>
+						Jupyter notebook available at:<br/> <a href="http://github.com/eurobank-gr/hackathon">http://github.com/eurobank-gr/hackathon</a>
+					</p>
+				</section>
+				
+				<section>
+					<h2>Support</h2>
+					<ul>
+						<li>Eurobank Group IT people available, ask us anything</li>
+						<li>Beyond-Hackathon Slack #api channel available</li>
+					</ul>
+				</section>
+
+				<section data-transition="slide" data-background="#40c4ff" data-background-transition="zoom">
+					<h2>Happy coding!</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
